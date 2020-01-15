@@ -17,10 +17,11 @@ for(i=0;n>0;i++)
   n=n/2;
   count=count+1;
 }
-for(i=count;i>0;i--)
+j=i;  
+for(i=j-1;i=>0;i--)
 {
-  a[count-i]=a[i];
-  Serial.print(a[count-i]);
+  
+  Serial.print(a[j]);
 }
 if(a[0]==1)
 {
