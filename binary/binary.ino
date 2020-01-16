@@ -10,6 +10,8 @@ pinMode(8,OUTPUT);
 
 void loop() {
   // put your main code here, to run repeatedly:
+  if(Serial.availiable>0)
+  {
 int n=32,a[5],count=0,i;
 for(i=0;n>0;i++)
 {
@@ -42,5 +44,6 @@ if(a[3]==1)
 if(a[4]==1)
 {
   digitalWrite(12,"HIGH");
+}
 }
 }
